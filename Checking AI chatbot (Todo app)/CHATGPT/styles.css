@@ -1,0 +1,117 @@
+/* styles.css */
+
+/* Ensure html and body full height */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Body style with gradient background */
+  body {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Fullscreen container */
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Agar content zyada ho to scroll karein */
+  }
+  
+  /* Header styling */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Form styling */
+  #todo-form {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #todo-form input[type="text"] {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #fda085;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  #todo-form input[type="text"]:focus {
+    border-color: #f6d365;
+  }
+  
+  #todo-form button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #fda085;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #todo-form button:hover {
+    background-color: #f6d365;
+  }
+  
+  /* Task list styling */
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #todo-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fefefe;
+    padding: 12px 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #todo-list li:hover {
+    background-color: #f9f9f9;
+  }
+  
+  #todo-list li.completed span {
+    text-decoration: line-through;
+    color: #aaa;
+  }
+  
+  #todo-list li button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  #todo-list li button.edit {
+    color: #007bff;
+  }
+  
+  #todo-list li button.delete {
+    color: #dc3545;
+  }
+  
